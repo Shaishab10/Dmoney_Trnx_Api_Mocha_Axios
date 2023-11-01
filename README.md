@@ -15,7 +15,8 @@
 ### How to run this project:
 - Clone this project
 - Open ```terminal```
-- Give this following command  ```npm test file .\test\*.test.js```
+- Give this following command ```npm i ```
+- Give this following command  ```npm test file .\api\*.js```
 
 
 ### Report:
