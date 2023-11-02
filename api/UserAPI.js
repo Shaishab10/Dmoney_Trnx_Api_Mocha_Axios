@@ -39,9 +39,7 @@ describe("Dmoney User API Integration testing",()=>{
         }).then((res) => res.data);
         console.log(response);
         expect(response.message).contains("User created");
-        fs.writeFileSync('./env.json', JSON.stringify({
-            ...jsonObj, agent_phn: response.user.phone_number
-        }));
+        
 
         let newUserObj = {
             id : response.user.id,
@@ -73,9 +71,7 @@ describe("Dmoney User API Integration testing",()=>{
         }).then((res) => res.data);
         console.log(response);
         expect(response.message).contains("User created");
-        fs.writeFileSync('./env.json', JSON.stringify({
-            ...jsonObj, customer1_phn: response.user.phone_number
-        }));
+
         let newUserObj = {
             id : response.user.id,
             name : response.user.name,
@@ -106,9 +102,6 @@ describe("Dmoney User API Integration testing",()=>{
         }).then((res) => res.data);
         console.log(response);
         expect(response.message).contains("User created");
-        fs.writeFileSync('./env.json', JSON.stringify({
-            ...jsonObj, customer2_phn: response.user.phone_number
-        }));
 
         let newUserObj = {
             id : response.user.id,
